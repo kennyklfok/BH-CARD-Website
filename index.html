@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardiology Services</title>
+    <link rel="stylesheet" href="./front-end/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container-center">
+        <img
+          src="./front-end/images/fraser_health_logo.png"
+          alt="Fraser Health Logo"
+          class="fh-logo"
+        />
+        <h1>Welcome to Burnaby Hospital</h1>
+        <h1>Diagnostic Cardiology</h1>
+        <h3>What brings you in today?</h3>
+
+        <div class="button-group">
+          <button class="card-btn" data-service="ECG">
+            Electrocardiogram (ECG)
+          </button>
+          <button class="card-btn" data-service="Holter">
+            Holter/Event Monitor
+          </button>
+          <button class="card-btn" data-service="ETT">
+            Exercise/Stress Tests
+          </button>
+          <button class="card-btn" data-service="PMC">Pacemaker Clinic</button>
+          <button class="card-btn" data-service="CPC">Chest Pain Clinic</button>
+          <button class="card-btn" data-service="HH">
+            Healthy Heart Program
+          </button>
+          <button class="card-btn" data-service="DRS">
+            Our Clinic Doctors
+          </button>
+
+          <div>
+            Questions? Contact us:
+            <a href="mailto:cardiology@burnabyhospital.com"
+              >cardiology@burnabyhospital.com</a
+            >
+            604-123-4567
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const routes = {
+          ECG: "front-end/ecg.html",
+          Holter: "front-end/holter.html",
+          ETT: "front-end/ett.html",
+          PMC: "front-end/pmc.html",
+          CPC: "front-end/cpc.html",
+          HH: "front-end/hh.html",
+          DRS: "front-end/drs.html",
+        };
+
+        const buttons = document.querySelectorAll(".card-btn");
+
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const service = button.dataset.service;
+            if (routes[service]) {
+              window.location.href = routes[service];
+            }
+          });
+        });
+
+        const backBtn = document.getElementById("backBtn");
+        if (backBtn) {
+          backBtn.addEventListener("click", () => {
+            window.location.href = "/index.html";
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
