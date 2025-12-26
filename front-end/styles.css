@@ -80,6 +80,13 @@ h3 {
   color: #a94444;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 5em;
+}
+
+
 /* Hover and focus effects - not important for mobile website */
 /* .card-btn:hover,
 .card-btn:focus-visible {
@@ -113,14 +120,18 @@ h3 {
   padding-left: 1.2rem;
 }
 
-.info li {
+li {
   margin-bottom: 0.6rem;
+  margin-top: 0.6rem;
 }
 
+.contact-info p {
+  margin: 0.25rem 0;
+}
 /* ===== ECG Images ===== */
 .ecg-images {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
   margin-bottom: 1rem;
@@ -136,6 +147,11 @@ h3 {
   display: block;
 }
 
+.holter-box-image {
+  display:flex;
+  justify-content: center;
+}
+
 /* Image size variants */
 .ecg-small {
   max-width: clamp(180px, 40vw, 260px);
@@ -148,6 +164,31 @@ h3 {
 .ecg-large {
   max-width: clamp(350px, 80vw, 600px);
 }
+
+/* Image zoom */
+.zoom-thumb {
+  cursor: zoom-in;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.overlay img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.hidden {
+  display: none;
+}
+
 
 .ecg-images figcaption {
   text-align: center;

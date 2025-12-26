@@ -77,7 +77,7 @@
           <img
             src="./images/event_monitor.jpg"
             alt="Event monitor device worn on the body"
-            class="ecg-medium"
+            class="ecg-small"
           />
           <figcaption>
             <em>Event Monitor</em>
@@ -94,8 +94,36 @@
               instructions to take off the monitor.
             </li>
             <li>
-              Return the monitor to the drop-off box by the agreed upon date/time
-              discussed during your appointment.
+              Return the monitor to the drop-off box by the agreed upon
+              date/time discussed during your appointment.
+            </li>
+            <li>
+              Forgot where to drop it off or lost the diary?
+              <div>
+                <ul>
+                  <li>
+                    <a href="./docs/holter_diary.pdf"
+                      >Holter Instructions/Diary</a
+                    >
+                  </li>
+                  <li>
+                    <a href="./docs/em_diary.docx">
+                      Event Monitor Instructions/Diary
+                    </a>
+                  </li>
+                  <div class="holter-box-image">
+                    <img
+                      class="ecg-small zoom-thumb"
+                      src="./images/holter_box_location.jpg"
+                      alt="Holter monitor box placement"
+                    />
+                  </div>
+
+                  <div id="imageOverlay" class="overlay hidden">
+                    <img id="overlayImg" src="" alt="Zoomed image" />
+                  </div>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -105,6 +133,21 @@
     <script>
       document.getElementById("backBtn").addEventListener("click", () => {
         window.location.href = "../index.html";
+      });
+      const thumbnails = document.querySelectorAll(".zoom-thumb");
+      const overlay = document.getElementById("imageOverlay");
+      const overlayImg = document.getElementById("overlayImg");
+
+      thumbnails.forEach((img) => {
+        img.addEventListener("click", () => {
+          overlayImg.src = img.src;
+          overlay.classList.remove("hidden");
+        });
+      });
+
+      overlay.addEventListener("click", () => {
+        overlay.classList.add("hidden");
+        overlayImg.src = "";
       });
     </script>
   </body>
