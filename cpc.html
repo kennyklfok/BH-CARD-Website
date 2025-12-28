@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chest Pain Clinic</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <!-- Back Button -->
+      <div class="button-group">
+        <button class="back-button" id="backBtn">← Back to Services</button>
+      </div>
+
+      <!-- Page Header -->
+      <h1>Chest Pain Clinic</h1>
+
+      <!-- Introduction Section -->
+      <section class="subheader">
+        <p>
+          Whether you have recently visited the Emergency Department or have
+          been referred by another physician, the
+          <strong>Chest Pain Clinic</strong> provides comprehensive assessment
+          for patients experiencing chest discomfort or symptoms that may be
+          related to heart disease.
+        </p>
+      </section>
+
+      <!-- What to Expect Section -->
+      <section>
+        <h2>What to Expect</h2>
+
+        <div class="info">
+          <ul>
+            <li>
+              You will be seen by one of our
+              <a href="./drs.html">clinic physicians</a> who specialize in
+              internal medicine/cardiology.
+            </li>
+            <li>
+              Prior to your appointment, you will likely undergo an initial
+              <a href="./ecg.html">electrocardiogram (ECG)</a>.
+            </li>
+            <li>
+              During your consultation, the physician will review your ECG
+              results and conduct a detailed assessment of your medical history
+              and current symptoms.
+            </li>
+            <li>
+              Additional diagnostic tests, such as a
+              <a href="./ett.html">stress test</a>,
+              <a href="./holter.html">Holter or event monitor</a>, or cardiac
+              imaging, may be ordered if clinically appropriate.
+              <ul>
+                <li>
+                  You may be required to meet with the physician at their office
+                  outside of the hospital to review the results of tests
+                  completed at a later date.
+                </li>
+              </ul>
+            </li>
+            <li>
+              At the conclusion of your appointment, the physician will discuss
+              the results and outline recommended next steps for your care.
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Back Button Script -->
+    <script>
+      document.getElementById("backBtn").addEventListener("click", () => {
+        window.location.href = "../index.html";
+      });
+    </script>
+  </body>
+</html>

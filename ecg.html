@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ECG</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="button-group">
+        <button class="back-button" id="backBtn">← Back to Services</button>
+      </div>
+
+      <h1>Electrocardiogram (ECG)</h1>
+
+      <section class="subheader">
+        <p>
+          An <strong>Electrocardiogram (ECG)</strong> is a quick, painless test
+          that records the electrical activity of your heart.
+        </p>
+      </section>
+
+      <section>
+        <h2>What to Expect</h2>
+        <ul class="info">
+          <li>The test takes 5–10 minutes.</li>
+
+          <li>
+            10 small stickers (electrodes) will be placed on your chest, arms,
+            and legs.
+            <ul>
+              <li>Please be prepared to provide access to the chest.</li>
+            </ul>
+          </li>
+
+          <li>These electrodes are connected to an ECG machine by wires.</li>
+          <li>
+            You will be asked to relax and stay still while your heart rhythm is
+            recorded.
+          </li>
+          <li>Don’t worry — you won’t feel a thing!</li>
+        </ul>
+      </section>
+
+      <section class="ecg-images">
+        <figure>
+          <img
+            src="/images/ecg_electrodes.jpg"
+            alt="ECG electrodes placed on the body"
+            class="ecg-small"
+          />
+          <figcaption><em>ECG stickers (electrodes)</em></figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="/images/ecg_machine.jpg"
+            alt="ECG machine used to record heart activity"
+            class="ecg-medium"
+          />
+          <figcaption>
+            <em>ECG machine</em>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section class="ecg-images">
+        <figure>
+          <img
+            src="/images/ecg_placements.png"
+            alt="Standard ECG electrode placements on the chest"
+            class="ecg-large"
+          />
+          <figcaption><em>Electrode placements</em></figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <script>
+      document.getElementById("backBtn").addEventListener("click", () => {
+        window.location.href = "../index.html";
+      });
+    </script>
+  </body>
+</html>

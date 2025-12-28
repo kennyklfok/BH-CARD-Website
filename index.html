@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cardiology Services</title>
-    <link rel="stylesheet" href="./public/styles.css" />
+    <link rel="stylesheet" href="./src/styles.css">
   </head>
   <body>
     <main>
       <div class="container-center">
         <img
-          src="./public/images/fraser_health_logo.png"
+          src="/images/fraser_health_logo.png"
           alt="Fraser Health Logo"
           class="fh-logo"
         />
@@ -18,9 +18,7 @@
         <h3>What brings you in today?</h3>
 
         <div class="button-group">
-          <button class="card-btn" data-service="ECG">
-            Electrocardiogram (ECG)
-          </button>
+          <button class="card-btn" data-service="ECG">Electrocardiogram (ECG)</button>
           <button class="card-btn" data-service="Holter">
             Holter/Event Monitor
           </button>
@@ -33,14 +31,6 @@
             Healthy Heart Program
           </button>
           <button class="card-btn" data-service="DRS">Our Doctors</button>
-
-          <div>
-            Questions? Contact us:
-            <div class="contact-info">
-              <p>Phone: 604-431-2892</p>
-              <p>Fax: 604-437-0233</p>
-            </div>
-          </div>
         </div>
       </div>
       <footer class="footer">
@@ -52,13 +42,13 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const routes = {
-          ECG: "public/ecg.html",
-          Holter: "public/holter.html",
-          ETT: "public/ett.html",
-          PMC: "public/pmc.html",
-          CPC: "public/cpc.html",
-          HH: "public/hh.html",
-          DRS: "public/drs.html",
+          ECG: "/ecg.html",
+          Holter: "/holter.html",
+          ETT: "/ett.html",
+          PMC: "/pmc.html",
+          CPC: "/cpc.html",
+          HH: "/hh.html",
+          DRS: "/drs.html",
         };
 
         const buttons = document.querySelectorAll(".card-btn");

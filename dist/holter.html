@@ -3,30 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Holter & Event Monitor</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>Holter & Event Monitor</title>
+    <link rel="stylesheet" crossorigin href="/assets/styles-qXmvbvWO.css">
   </head>
-
   <body>
     <main class="container">
       <div class="button-group">
         <button class="back-button" id="backBtn">← Back to Services</button>
       </div>
-
       <h1>Holter & Event Monitors</h1>
-
       <section class="subheader">
         <p>
           Holter Monitors and Event Monitors are portable devices used to
           continuously record your heart rhythm.
         </p>
         <p>Holter Monitors record for 24 hours.</p>
-        <p>Event Monitors record for up two weeks.</p>
+        <p>Event Monitors record for up to two weeks.</p>
       </section>
-
       <section>
         <h2>What to Expect</h2>
-
         <div class="info">
           <h3><strong>Holter Monitor:</strong></h3>
           <ul>
@@ -41,18 +36,16 @@
           </ul>
         </div>
       </section>
-
       <section class="ecg-images">
         <figure>
           <img
-            src="./images/holter_monitor.jpg"
+            src="/images/holter_monitor.jpg"
             alt="Holter monitor device worn on the body"
             class="ecg-medium"
           />
           <figcaption><em>Holter Monitor</em></figcaption>
         </figure>
       </section>
-
       <section>
         <div class="info">
           <h3><strong>Event Monitor:</strong></h3>
@@ -71,20 +64,16 @@
           </ul>
         </div>
       </section>
-
       <section class="ecg-images">
         <figure>
           <img
-            src="./images/event_monitor.jpg"
+            src="/images/event_monitor.jpg"
             alt="Event monitor device worn on the body"
             class="ecg-small"
           />
-          <figcaption>
-            <em>Event Monitor</em>
-          </figcaption>
+          <figcaption><em>Event Monitor</em></figcaption>
         </figure>
       </section>
-
       <section>
         <h2>Returning the Monitor</h2>
         <div class="info">
@@ -99,52 +88,46 @@
             </li>
             <li>
               Forgot where to drop it off or lost the diary?
-              <div>
-                <ul>
-                  <li>
-                    <a href="./docs/holter_diary.pdf"
-                      >Holter Instructions/Diary</a
-                    >
-                  </li>
-                  <li>
-                    <a href="./docs/em_diary.docx">
-                      Event Monitor Instructions/Diary
-                    </a>
-                  </li>
-                  <div class="holter-box-image">
-                    <img
-                      class="ecg-small zoom-thumb"
-                      src="./images/holter_box_location.jpg"
-                      alt="Holter monitor box placement"
-                    />
-                  </div>
-
-                  <div id="imageOverlay" class="overlay hidden">
-                    <img id="overlayImg" src="" alt="Zoomed image" />
-                  </div>
-                </ul>
+              <ul>
+                <li>
+                  <a href="/docs/holter_diary.pdf"
+                    >Holter Instructions/Diary</a
+                  >
+                </li>
+                <li>
+                  <a href="/docs/em_diary.docx"
+                    >Event Monitor Instructions/Diary</a
+                  >
+                </li>
+              </ul>
+              <div class="holter-box-image">
+                <img
+                  class="ecg-small zoom-thumb"
+                  src="/images/holter_box_location.jpg"
+                  alt="Holter monitor box placement"
+                />
+              </div>
+              <div id="imageOverlay" class="overlay hidden">
+                <img id="overlayImg" src="" alt="Zoomed image" />
               </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-
     <script>
       document.getElementById("backBtn").addEventListener("click", () => {
-        window.location.href = "../index.html";
+        window.location.href = "/index.html";
       });
       const thumbnails = document.querySelectorAll(".zoom-thumb");
       const overlay = document.getElementById("imageOverlay");
       const overlayImg = document.getElementById("overlayImg");
-
       thumbnails.forEach((img) => {
         img.addEventListener("click", () => {
           overlayImg.src = img.src;
           overlay.classList.remove("hidden");
         });
       });
-
       overlay.addEventListener("click", () => {
         overlay.classList.add("hidden");
         overlayImg.src = "";
