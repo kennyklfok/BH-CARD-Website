@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Holter & Event Monitor</title>
-    <link rel="stylesheet" crossorigin href="/assets/styles-qXmvbvWO.css">
+    <script type="module" crossorigin src="/assets/main-D12WFe4r.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-qXmvbvWO.css">
   </head>
   <body>
     <main class="container">
@@ -115,23 +116,9 @@
         </div>
       </section>
     </main>
-    <script>
-      document.getElementById("backBtn").addEventListener("click", () => {
-        window.location.href = "/index.html";
-      });
-      const thumbnails = document.querySelectorAll(".zoom-thumb");
-      const overlay = document.getElementById("imageOverlay");
-      const overlayImg = document.getElementById("overlayImg");
-      thumbnails.forEach((img) => {
-        img.addEventListener("click", () => {
-          overlayImg.src = img.src;
-          overlay.classList.remove("hidden");
-        });
-      });
-      overlay.addEventListener("click", () => {
-        overlay.classList.add("hidden");
-        overlayImg.src = "";
-      });
-    </script>
   </body>
 </html>
+
+
+
+
