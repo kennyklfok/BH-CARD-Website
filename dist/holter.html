@@ -3,122 +3,109 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Holter & Event Monitor</title>
-    <script type="module" crossorigin src="/assets/main-D12WFe4r.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/main-qXmvbvWO.css">
+    <title>Holter & Event Monitor</title>
+    <script type="module" crossorigin src="/assets/main-BuXlPWYN.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/main-DqJ-dXW1.css">
   </head>
   <body>
     <main class="container">
-      <div class="button-group">
-        <button class="back-button" id="backBtn">← Back to Services</button>
+      <div class="top-actions">
+        <button class="back-button" id="backBtn" type="button">&larr; Back to Services</button>
       </div>
+
+      <p class="eyebrow">Wearable heart monitor</p>
       <h1>Holter & Event Monitors</h1>
+
       <section class="subheader">
         <p>
-          Holter Monitors and Event Monitors are portable devices used to
-          continuously record your heart rhythm.
+          Holter monitors and event monitors are portable devices that record
+          your heart rhythm while you go about your day.
         </p>
-        <p>Holter Monitors record for 24 hours.</p>
-        <p>Event Monitors record for up to two weeks.</p>
+        <p>
+          A Holter monitor usually records for 24 hours. An event monitor may be
+          worn for up to two weeks.
+        </p>
       </section>
+
       <section>
-        <h2>What to Expect</h2>
-        <div class="info">
-          <h3><strong>Holter Monitor:</strong></h3>
+        <h2>Holter Monitor</h2>
+        <div class="info-card">
           <ul>
-            <li>Five stickers (electrodes) will be placed on your chest.</li>
-            <li>
-              Please do not get the device wet.
-              <ul>
-                <li>No bathing, showering, or swimming is allowed.</li>
-              </ul>
-            </li>
-            <li>Record any relevant symptoms in the diary provided.</li>
+            <li>Five stickers called electrodes will be placed on your chest.</li>
+            <li>Do not get the device wet. No bathing, showering, or swimming.</li>
+            <li>Write down any symptoms in the diary you are given.</li>
           </ul>
         </div>
       </section>
-      <section class="ecg-images">
+
+      <section class="ecg-images" aria-label="Holter monitor photo">
         <figure>
           <img
             src="/images/holter_monitor.jpg"
             alt="Holter monitor device worn on the body"
             class="ecg-medium"
           />
-          <figcaption><em>Holter Monitor</em></figcaption>
+          <figcaption>Holter monitor</figcaption>
         </figure>
       </section>
+
       <section>
-        <div class="info">
-          <h3><strong>Event Monitor:</strong></h3>
+        <h2>Event Monitor</h2>
+        <div class="info-card">
           <ul>
-            <li>Three stickers (electrodes) will be placed on your chest.</li>
+            <li>Three stickers called electrodes will be placed on your chest.</li>
+            <li>Do not bathe or shower while wearing the monitor.</li>
             <li>
-              Do not bathe or shower while wearing the monitor.
-              <ul>
-                <li>
-                  You will be shown how to change the stickers so the monitor
-                  can be removed for bathing or showering.
-                </li>
-              </ul>
+              You will be shown how to change the stickers so the monitor can
+              be removed for bathing or showering.
             </li>
-            <li>Record any relevant symptoms in the diary provided.</li>
+            <li>Write down any symptoms in the diary you are given.</li>
           </ul>
         </div>
       </section>
-      <section class="ecg-images">
+
+      <section class="ecg-images" aria-label="Event monitor photo">
         <figure>
           <img
             src="/images/event_monitor.jpg"
             alt="Event monitor device worn on the body"
             class="ecg-small"
           />
-          <figcaption><em>Event Monitor</em></figcaption>
+          <figcaption>Event monitor</figcaption>
         </figure>
       </section>
+
       <section>
         <h2>Returning the Monitor</h2>
         <div class="info">
           <ul>
             <li>
-              Once the recording duration is complete, follow the specific
-              instructions to take off the monitor.
+              Return the monitor by the date and time discussed at your
+              appointment.
             </li>
             <li>
-              Return the monitor to the drop-off box by the agreed upon
-              date/time discussed during your appointment.
+              Use the drop-off box shown below if you were asked to return it
+              there. Tap the photo to enlarge it.
             </li>
             <li>
-              Forgot where to drop it off or lost the diary?
-              <ul>
-                <li>
-                  <a href="/docs/holter_diary.pdf"
-                    >Holter Instructions/Diary</a
-                  >
-                </li>
-                <li>
-                  <a href="/docs/em_diary.docx"
-                    >Event Monitor Instructions/Diary</a
-                  >
-                </li>
-              </ul>
-              <div class="holter-box-image">
-                <img
-                  class="ecg-small zoom-thumb"
-                  src="/images/holter_box_location.jpg"
-                  alt="Holter monitor box placement"
-                />
-              </div>
-              <div id="imageOverlay" class="overlay hidden">
-                <img id="overlayImg" src="" alt="Zoomed image" />
-              </div>
+              Lost your diary or instructions?
+              <a href="/docs/holter_diary.pdf">Holter diary</a> and
+              <a href="/docs/em_diary.docx">event monitor diary</a> are
+              available here.
             </li>
           </ul>
+          <div class="holter-box-image">
+            <img
+              class="ecg-medium zoom-thumb"
+              src="/images/holter_box_location.jpg"
+              alt="Holter monitor return box location"
+            />
+          </div>
+          <div id="imageOverlay" class="overlay hidden" aria-hidden="true">
+            <img id="overlayImg" src="" alt="" />
+          </div>
         </div>
       </section>
     </main>
   </body>
 </html>
-
-
-
-
